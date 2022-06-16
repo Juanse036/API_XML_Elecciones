@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Consolidado>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0012"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -3900,8 +3900,8 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
-        <Boletin V="0028"/>
+        <Numero V="0033"/>
+        <Boletin V="0033"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
         <Departamento V="03"/>
@@ -3913,8 +3913,8 @@
         <Dia V="03"/>
         <Mes V="12"/>
         <Anio V="2021"/>
-        <Hora V="16"/>
-        <Minuto V="11"/>
+        <Hora V="17"/>
+        <Minuto V="01"/>
         <Mesas_Instaladas V="607"/>
         <Mesas_Informadas V="606"/>
         <Porc_Mesas_Informadas V="099,83"/>
@@ -4278,8 +4278,8 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
-        <Boletin V="0028"/>
+        <Numero V="0033"/>
+        <Boletin V="0033"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
         <Departamento V="05"/>
@@ -4291,8 +4291,8 @@
         <Dia V="03"/>
         <Mes V="12"/>
         <Anio V="2021"/>
-        <Hora V="16"/>
-        <Minuto V="11"/>
+        <Hora V="17"/>
+        <Minuto V="01"/>
         <Mesas_Instaladas V="444"/>
         <Mesas_Informadas V="443"/>
         <Porc_Mesas_Informadas V="099,77"/>
@@ -4524,7 +4524,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0003"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -5983,7 +5983,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0008"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -7590,7 +7590,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0005"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -9145,7 +9145,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0012"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -10876,7 +10876,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0012"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -12169,8 +12169,8 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
-        <Boletin V="0028"/>
+        <Numero V="0033"/>
+        <Boletin V="0033"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
         <Departamento V="16"/>
@@ -12182,8 +12182,8 @@
         <Dia V="03"/>
         <Mes V="12"/>
         <Anio V="2021"/>
-        <Hora V="16"/>
-        <Minuto V="11"/>
+        <Hora V="17"/>
+        <Minuto V="01"/>
         <Mesas_Instaladas V="2936"/>
         <Mesas_Informadas V="2936"/>
         <Porc_Mesas_Informadas V="100,00"/>
@@ -13135,7 +13135,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0005"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -14204,7 +14204,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0013"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -16199,8 +16199,8 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
-        <Boletin V="0028"/>
+        <Numero V="0033"/>
+        <Boletin V="0033"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
         <Departamento V="21"/>
@@ -16212,8 +16212,8 @@
         <Dia V="03"/>
         <Mes V="12"/>
         <Anio V="2021"/>
-        <Hora V="16"/>
-        <Minuto V="11"/>
+        <Hora V="17"/>
+        <Minuto V="01"/>
         <Mesas_Instaladas V="224"/>
         <Mesas_Informadas V="223"/>
         <Porc_Mesas_Informadas V="099,55"/>
@@ -16403,7 +16403,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0012"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -18070,7 +18070,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0007"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -19229,7 +19229,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0012"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -21330,7 +21330,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0009"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -23075,7 +23075,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0012"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -25292,7 +25292,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0011"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -26761,7 +26761,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0008"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -28864,7 +28864,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0009"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -32833,7 +32833,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0005"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -33766,7 +33766,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0007"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -34833,7 +34833,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0013"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -36438,7 +36438,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0013"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -38159,7 +38159,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0010"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -38892,7 +38892,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0009"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -41101,7 +41101,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0010"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -42196,7 +42196,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0011"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -42703,7 +42703,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0011"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -43436,7 +43436,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0003"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -44321,7 +44321,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0011"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
@@ -44910,7 +44910,7 @@
         </Detalle_Circunscripcion>
     </Avance>
     <Avance>
-        <Numero V="0028"/>
+        <Numero V="0033"/>
         <Boletin V="0006"/>
         <Tipo_Avance V="MUNICIPAL"/>
         <Desc_Corporacion V="CONSEJOS DE LA JUVENTUD"/>
