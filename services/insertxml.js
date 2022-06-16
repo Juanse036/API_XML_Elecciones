@@ -12,23 +12,25 @@ async function ReadXmlNacional(){
 }
 async function getNacional(){
   avance = await leerxml.partidosnacional();
-
   partido = await leertextos.arraypartidos();      
+
   temppartido = partido.map(partido => [
       partido.id_partido,
       partido.nombre
   ]) 
 
   let nacional = avance.Detalle_Circunscripcion.lin.Detalle_Partido.lin; 
+  let boletin = avance.Numero.V;
 
   for (var i = 0; i < nacional.length; i++){
     const temp = temppartido.filter((ele) => {
       if (ele[0] == nacional[i].Partido.V){
         return ele;
       }         
-  })  
+  })      
     nacional[i].Nombre = temp[0][1];
     nacional[i].Ciudad = 'NACIONAL';
+    nacional[i].Boletin = boletin;
   }
 
   return nacional;
@@ -44,20 +46,21 @@ async function ReadXmlDepartamentos(){
 
 async function getDepartamento(page = 1, departamento){
   avance = await leerxml.partidosdepartamentos(); 
+  partido = await leertextos.arraypartidos();     
   
   let departamentos = avance.filter(element => {
     if (element.Desc_Departamento.V === departamento.departamento){
       return element;
     }
   })
-
-  partido = await leertextos.arraypartidos();      
+   
   temppartido = partido.map(partido => [
       partido.id_partido,
       partido.nombre
   ]) 
-
+  let boletin = departamentos[0].Numero.V;
   departamentos =  departamentos[0].Detalle_Circunscripcion.lin.Detalle_Partido.lin;  
+  
 
   for (var i = 0; i < departamentos.length; i++){
     const temp = temppartido.filter((ele) => {
@@ -67,6 +70,7 @@ async function getDepartamento(page = 1, departamento){
   })  
     departamentos[i].Nombre = temp[0][1];
     departamentos[i].departamentos = departamento.departamento;
+    departamentos[i].Boletin = boletin;
   }
 
   return departamentos;
@@ -92,7 +96,7 @@ async function getCapitales(page = 1, capital){
       partido.id_partido,
       partido.nombre
   ])  
-  
+  let boletin = ciudad[0].Numero.V;
   ciudad =  ciudad[0].Detalle_Circunscripcion.lin.Detalle_Partido.lin;  
 
   for (var i = 0; i < ciudad.length; i++){
@@ -103,6 +107,7 @@ async function getCapitales(page = 1, capital){
   })  
     ciudad[i].Nombre = temp[0][1];
     ciudad[i].Ciudad = capital.capital;
+    ciudad[i].Boletin = boletin;
   }
   //console.log(ciudad);
   return ciudad;
