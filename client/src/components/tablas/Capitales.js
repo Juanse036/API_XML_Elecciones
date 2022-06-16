@@ -6,37 +6,46 @@ import { getCapital } from '../../actions/capitales';
 const Ciudades = ({ getCapital, partidos: {partidos , loading}, ciudad} ) => {
 
     useEffect(async () => {
-        await getCapital(ciudad);
+        const getData = async () =>{
+            await getCapital(ciudad);
+        }
+        getData();
+        
     }, [ciudad])
 
     return (
         <Fragment>
         { partidos ? (
-            <section className="contenedor-tabla">
-            <table className="container">
-                <tbody>
-                    <tr className="titulo">  
-                        <th className="priority-1"><h1>ID</h1></th>  
-                        <th className="priority-2"><h1>Partido</h1></th>  
-                        <th className="priority-3"><h1>Votos</h1></th>  
-                        <th className="priority-4"><h1>Porcentaje</h1></th>  
-                        <th className="priority-5"><h1>Ciudad</h1></th>  
-                    </tr>  
+            <section className='sectiontables'>
+                <h1 className='titulotabla'>RESULTADOS CAPITALES: {partidos[0].Ciudad}</h1>
+                <section className="contenedor-tabla">
+                <table className="container">
+                    <tbody>
+                        <tr className="titulo">  
+                            <th className="priority-1"><h1>ID</h1></th>  
+                            <th className="priority-2"><h1>Partido</h1></th>  
+                            <th className="priority-3"><h1>Votos</h1></th>  
+                            <th className="priority-4"><h1>Porcentaje</h1></th>  
+                            <th className="priority-5"><h1>Ciudad</h1></th>  
+                            <th className="priority-5"><h1>Boletin</h1></th>  
+                        </tr>  
 
-                    {partidos.map ( partidos => (
-                        <tr className="datos" key={partidos.ID}>  
-                            <td className="priority-1"> {partidos.Partido.V}</td>  
-                            <td className="priority-2">{partidos.Nombre}</td>  
-                            <td className="priority-3">{partidos.Votos.V}</td>  
-                            <td className="priority-4">{partidos.Porc.V}</td>  
-                            <td className="priority-5">{partidos.Ciudad}</td>  
-                        </tr> 
-                    ))}
-                </tbody>
+                        {partidos.map ( partidos => (
+                            <tr key={partidos.Partido.V} className="datos" >    
+                                <td className="priority-1"> {partidos.Partido.V}</td>  
+                                <td className="priority-2">{partidos.Nombre}</td>  
+                                <td className="priority-3">{partidos.Votos.V}</td>  
+                                <td className="priority-4">{partidos.Porc.V}</td>  
+                                <td className="priority-5">{partidos.Ciudad}</td>  
+                                <td className="priority-5">{partidos.Boletin}</td>  
+                            </tr> 
+                        ))}
+                    </tbody>
 
-                
-            </table>  
-            </section>
+                    
+                </table>  
+                </section>
+            </ section>
             ): <h4>NO FOUND</h4>      
         }                
         </Fragment>   

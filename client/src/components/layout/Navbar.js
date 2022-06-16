@@ -84,7 +84,7 @@ const Navbar = () => {
                 <li>
                     <div className="logo-menu">
                     <Link to="/nacionales" ><img src={nacional} />   </Link>
-                        <Link to="/" className="text-navbar">
+                        <Link to="/nacionales" className="text-navbar">
                             Nacionales
                         </Link>
                     </div>                    

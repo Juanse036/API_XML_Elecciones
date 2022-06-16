@@ -6,36 +6,44 @@ import { getDepartamento } from '../../actions/departamentos';
 const Departamentos = ({ getDepartamento, partidos: {partidos, loading}, departamento} ) => {
     //console.log(departamento);
     useEffect(() => {
-        getDepartamento(departamento);
+        const getData = async () =>{
+            await getDepartamento(departamento);
+        }
+        getData();
     }, [departamento])
 
 
     return (
         <Fragment>
         { partidos ? (
-            <section className="contenedor-tabla">
-                <table className="container">
-                    <tbody>
-                        <tr className="titulo">  
-                            <th className="priority-1"><h1>ID</h1></th>                          
-                            <th className="priority-2"><h1>Partido</h1></th>  
-                            <th className="priority-3"><h1>Votos</h1></th>  
-                            <th className="priority-4"><h1>Porcentaje</h1></th>  
-                            <th className="priority-5"><h1>Departamento</h1></th>  
-                        </tr>  
+            <section className='sectiontables'>
+                <h1 className='titulotabla'>RESULTADOS DEPARTAMENTOS: {partidos[0].departamentos}</h1>
+                <section className="contenedor-tabla">
+                    <table className="container">
+                        <tbody>
+                            <tr className="titulo">  
+                                <th className="priority-1"><h1>ID</h1></th>                          
+                                <th className="priority-2"><h1>Partido</h1></th>  
+                                <th className="priority-3"><h1>Votos</h1></th>  
+                                <th className="priority-4"><h1>Porcentaje</h1></th>  
+                                <th className="priority-5"><h1>Departamento</h1></th>  
+                                <th className="priority-5"><h1>Boletin</h1></th>  
+                            </tr>  
 
-                        {partidos.map ( partidos => (
-                            <tr className="datos" key={partidos.ID}>  
-                                <td className="priority-1">{partidos.Partido.V}</td>                              
-                                <td className="priority-2">{partidos.Nombre}</td>  
-                                <td className="priority-3">{partidos.Votos.V}</td>  
-                                <td className="priority-4">{partidos.Porc.V}</td>  
-                                <td className="priority-5">{partidos.departamentos}</td>  
-                            </tr> 
-                        ))}
-                    </tbody>
-                </table>  
-            </section>
+                            {partidos.map ( partidos => (
+                                <tr key={partidos.Partido.V} className="datos" >  
+                                    <td className="priority-1">{partidos.Partido.V}</td>                              
+                                    <td className="priority-2">{partidos.Nombre}</td>  
+                                    <td className="priority-3">{partidos.Votos.V}</td>  
+                                    <td className="priority-4">{partidos.Porc.V}</td>  
+                                    <td className="priority-5">{partidos.departamentos}</td>  
+                                    <td className="priority-5">{partidos.Boletin}</td>  
+                                </tr> 
+                            ))}
+                        </tbody>
+                    </table>  
+                </section>
+            </ section>
             ): <h4>NOT FOUNDDDDDDDDDDDD</h4>      
         }                
         </Fragment>   
