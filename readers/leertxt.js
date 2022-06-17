@@ -47,7 +47,7 @@ const divipol = [
 const arraycandidatos = async () => {
   try {
     
-    const json = await readFile('./files/CANDIDATOS.txt', 'utf8');
+    const json = await readFile('./files/CANDIDATOS.TXT', 'utf8');
     const array1 = json.split(/\r?\n/);       
           candidato.splice(0, candidato.length);
           for (const i in array1){
@@ -99,7 +99,7 @@ const arraypartidos = async () => {
 
 const arraydivipol = async () => {
       try {
-        const json = await readFile("./files/DIVIPOL.txt", 'utf8');
+        const json = await readFile("./files/DIVIPOL.TXT", 'utf8');
         const array1 = json.split(/\r?\n/); divipol.splice(0, divipol.length);
         for (const i in array1){
             const divipolTemp = {
