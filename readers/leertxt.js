@@ -78,7 +78,7 @@ const arraycandidatos = async () => {
 
 const arraypartidos = async () => {
   try {
-    const json = await readFile('./files/PARTIDOS.txt', 'utf8');
+    const json = await readFile('./files/PARTIDOS.TXT', 'utf8');
     const array1 = json.split(/\r?\n/); 
           partido.splice(0, partido.length);
           for (const i in array1){
