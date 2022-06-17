@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.NODE_ENV|| 5000;
+const PORT = process.env.PORT|| 5000;
 const path = require('path')
 
 
@@ -19,6 +19,6 @@ app.use('/xml', require('./routes/api/archivosxml'));
 app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 
-app.listen(port, () => {
-  console.log(`Servidor corriendo en: http://localhost:${port}`)
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en: http://localhost:${PORT}`)
 });
