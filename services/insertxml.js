@@ -13,7 +13,7 @@ async function ReadXmlNacional(){
 async function getNacional(){
   avance = await leerxml.partidosnacional();
   partido = await leertextos.arraypartidos();      
-
+  console.log('partido', partido);
   temppartido = partido.map(partido => [
       partido.id_partido,
       partido.nombre
