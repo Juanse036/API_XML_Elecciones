@@ -17,7 +17,7 @@ const Ciudades = ({ getCapital, partidos: {partidos , loading}, ciudad} ) => {
         <Fragment>
         { partidos ? (
             <section className='sectiontables'>
-                <h1 className='titulotabla'>RESULTADOS CAPITALES: {partidos[0].Ciudad}</h1>
+                <h3 className='titulotabla'>RESULTADOS CAPITALES: {partidos[0].Ciudad}</h3>
                 <section className="contenedor-tabla">
                 <table className="container">
                     <tbody>

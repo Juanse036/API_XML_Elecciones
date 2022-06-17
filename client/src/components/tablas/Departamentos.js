@@ -17,7 +17,7 @@ const Departamentos = ({ getDepartamento, partidos: {partidos, loading}, departa
         <Fragment>
         { partidos ? (
             <section className='sectiontables'>
-                <h1 className='titulotabla'>RESULTADOS DEPARTAMENTOS: {partidos[0].departamentos}</h1>
+                <h3 className='titulotabla'>RESULTADOS DEPARTAMENTOS: {partidos[0].departamentos}</h3>
                 <section className="contenedor-tabla">
                     <table className="container">
                         <tbody>
