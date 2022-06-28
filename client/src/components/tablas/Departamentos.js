@@ -27,7 +27,7 @@ const Departamentos = ({ getDepartamento, partidos: {partidos, loading}, departa
                                 <th className="priority-3"><h1>Votos</h1></th>  
                                 <th className="priority-4"><h1>Porcentaje</h1></th>  
                                 <th className="priority-5"><h1>Departamento</h1></th>  
-                                <th className="priority-5"><h1>Boletin</h1></th>  
+                                <th className="priority-6"><h1>Boletin</h1></th>  
                             </tr>  
 
                             {partidos.map ( partidos => (
@@ -37,7 +37,7 @@ const Departamentos = ({ getDepartamento, partidos: {partidos, loading}, departa
                                     <td className="priority-3">{partidos.Votos.V}</td>  
                                     <td className="priority-4">{partidos.Porc.V}</td>  
                                     <td className="priority-5">{partidos.departamentos}</td>  
-                                    <td className="priority-5">{partidos.Boletin}</td>  
+                                    <td className="priority-6">{partidos.Boletin}</td>  
                                 </tr> 
                             ))}
                         </tbody>
