@@ -247,6 +247,7 @@ a:hover {
   padding-top: 5px;
   padding-bottom: 17px;
   background-color: #e2e3e4;
+  margin-left: 6em;
 }
 .social_footer_ul {
   display: flex;
@@ -330,5 +331,9 @@ a:hover {
 
   .homep {
     margin-top: 16px;
+  }
+
+  .footertext {
+    display: none;
   }
 }
