@@ -1,16 +1,27 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getNacional } from '../../actions/nacional';
+import Spinner from '../spinner/Spinner';
 
 const Nacionales = ({ getNacional, partidos: {partidos , loading}, ciudad} ) => {
+
+    const [loadData, setLoadData] = useState(true)
 
     useEffect(() => {
         const getData = async () =>{
            await getNacional();
+           setLoadData(false);
         }
+        setLoadData(true)
         getData();        
     }, [ciudad])
+
+    if (loadData) {
+        return (
+            <Spinner />
+        )
+    }
 
     return (
         <Fragment>
