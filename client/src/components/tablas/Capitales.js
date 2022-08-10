@@ -1,17 +1,27 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getCapital } from '../../actions/capitales';
+import Spinner from '../spinner/Spinner';
 
-const Ciudades = ({ getCapital, partidos: {partidos , loading}, ciudad} ) => {
+const Capitales = ({ getCapital, partidos: {partidos , loading}, ciudad} ) => {
 
-    useEffect(async () => {
-        const getData = async () =>{
-            await getCapital(ciudad);
+    const [loadData, setLoadData] = useState(true)
+    
+    useEffect(() => {
+        const getData = async () =>{            
+           await getCapital(ciudad);
+           setLoadData(false);
         }
-        getData();
-        
+        setLoadData(true)
+        getData();        
     }, [ciudad])
+
+    if (loadData) {
+        return (
+            <Spinner />
+        )
+    }
 
     return (
         <Fragment>
@@ -52,7 +62,7 @@ const Ciudades = ({ getCapital, partidos: {partidos , loading}, ciudad} ) => {
     )
 }
 
-Ciudades.propTypes = {
+Capitales.propTypes = {
     getCapital: PropTypes.func.isRequired,
     partidos:PropTypes.object.isRequired
 }
@@ -61,4 +71,4 @@ const mapStateToProps = state => ({
     partidos: state.partidos
 })
 
-export default connect(mapStateToProps, { getCapital })(Ciudades)
+export default connect(mapStateToProps, { getCapital })(Capitales)

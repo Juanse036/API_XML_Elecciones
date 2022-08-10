@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT|| 5000;
+const PORT = process.env.PORT || 5000;
 const path = require('path')
 
 
@@ -15,6 +15,8 @@ app.use(
 app.use('/clave', require('./routes/api/archivosclave'));
 app.use('/xml', require('./routes/api/archivosxml'));
 
+
+
 // Serve static assets in production
 if(process.env.NODE_ENV === 'production'){
   //Set static folder
@@ -27,5 +29,5 @@ if(process.env.NODE_ENV === 'production'){
 
 
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en: http://localhost:${PORT}`)
+  console.log(`Servidor corriendo en: https://localhost:${PORT}`)
 });

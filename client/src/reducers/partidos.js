@@ -12,7 +12,7 @@ const initialState = {
 }
 
 export default function(state = initialState, action) {
-    const { type, payload, datos } = action;
+    const { type, payload } = action;
 
     switch(type) {
         case GET_ALL_DEPARTAMENTOS:

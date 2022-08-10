@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Gotit from '../../img/Logo Gotit.png';
 import home from '../../img/home.png';
 import alcalde from '../../img/Alcalde.png';
@@ -75,7 +75,7 @@ const Navbar = () => {
             <ul className="navlist">
                 <li>
                     <div className="logo-menu">
-                    <Link to="/" ><img src={home} />   </Link>
+                    <Link to="/" ><img src={home} alt='home'/>   </Link>
                         <Link to="/" className="text-navbar">
                             Home
                         </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <div className="logo-menu">
-                    <Link to="/nacionales" ><img src={nacional} />   </Link>
+                    <Link to="/nacionales" ><img src={nacional} alt='nacional'/>   </Link>
                         <Link to="/nacionales" className="text-navbar">
                             Nacionales
                         </Link>
@@ -91,7 +91,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <div className="logo-menu">
-                    <Link to="/capitales"><img src={alcalde} /></Link>
+                    <Link to="/capitales"><img src={alcalde} alt='alcalde'/></Link>
                         <Link to="/capitales" className="text-navbar">
                             Capitales
                         </Link>
@@ -106,7 +106,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <div className="logo-menu">
-                      <Link to="/departamentos" ><img src={gobernador} />   </Link>
+                      <Link to="/departamentos" ><img src={gobernador} alt='gobernador' />   </Link>
                         <Link to="/departamentos" className="text-navbar">
                             Departamentos
                         </Link>

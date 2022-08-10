@@ -1,16 +1,29 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getDepartamento } from '../../actions/departamentos';
+import Spinner from '../spinner/Spinner';
 
 const Departamentos = ({ getDepartamento, partidos: {partidos, loading}, departamento} ) => {
-    //console.log(departamento);
+    
+
+    const [loadData, setLoadData] = useState(true)
+
     useEffect(() => {
         const getData = async () =>{
             await getDepartamento(departamento);
+            setLoadData(false)
         }
+        setLoadData(true)
         getData();
+        
     }, [departamento])
+
+    if (loadData) {
+        return (
+            <Spinner />
+        )
+    }
 
 
     return (

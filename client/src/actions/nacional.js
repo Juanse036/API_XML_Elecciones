@@ -5,8 +5,7 @@ import {
 } from './types';
 
 //Get All Capitales
-export const getNacional = capital => async dispatch => {
-    
+export const getNacional = () => async dispatch => {    
     
     try {        
         const partidos = await axios.get(`/xml/getnacional`);

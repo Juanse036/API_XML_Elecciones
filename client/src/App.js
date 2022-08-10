@@ -1,6 +1,6 @@
 import {Fragment} from 'react'
 import Navbar from './components/layout/Navbar';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
 import { TablaRoutes } from './components/routing/TablaRoutes';
 import Footer from './components/footer/Footer'

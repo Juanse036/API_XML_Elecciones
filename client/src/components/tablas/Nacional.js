@@ -5,9 +5,9 @@ import { getNacional } from '../../actions/nacional';
 
 const Nacionales = ({ getNacional, partidos: {partidos , loading}, ciudad} ) => {
 
-    useEffect(async () => {
+    useEffect(() => {
         const getData = async () =>{
-           await getNacional(ciudad);
+           await getNacional();
         }
         getData();        
     }, [ciudad])
@@ -16,7 +16,7 @@ const Nacionales = ({ getNacional, partidos: {partidos , loading}, ciudad} ) => 
         <Fragment>
         { partidos ? (
             <section className='sectiontables'>
-            <h3 className='titulotabla'>RESULTADOS NACIONALES</h3>
+                <h3 className='titulotabla'>RESULTADOS NACIONALES</h3>
                 <section className="contenedor-tabla">
                 <table className="container">
                     <tbody>

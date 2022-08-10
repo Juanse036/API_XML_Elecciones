@@ -5,11 +5,11 @@ import {
 } from './types';
 
 //Get All Capitales
-export const getCapital = capital => async dispatch => {    
+export const getCapital = capital => async dispatch => {        
     
     try {        
-        const partidos = await axios.get(`/xml/getcapitales/${capital}`);
-        
+        const partidos = await axios.get(`/xml/getcapitales/${capital}`);    
+
         dispatch({
             type: GET_ALL_CAPITALES,
             payload: partidos.data,
