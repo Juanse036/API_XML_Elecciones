@@ -127,8 +127,8 @@ const Navbar = () => {
     return (
         <header className="header">  
             <aside className="sidebar">
-                <div className="container-logo">
-                    <img src={Gotit} />           
+                <div className="container-logo">                
+                <Link to="/" ><img src={Gotit} alt="logo-gotit"/></Link>
                 </div>
                 {links}
                 
