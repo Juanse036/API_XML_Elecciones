@@ -95,9 +95,12 @@ a:hover {
 }
 .container-logo {
   padding: 0.75em 0.3em;
+}
+.container-logo img {
   width: auto;
   height: auto;
 }
+
 .logo-menu {
   display: flex;
   padding: 0.75em 1.4em;
