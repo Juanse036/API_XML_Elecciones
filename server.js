@@ -15,9 +15,8 @@ app.use(
 app.use('/clave', require('./routes/api/archivosclave'));
 app.use('/xml', require('./routes/api/archivosxml'));
 
-
-
 // Serve static assets in production
+/*
 if(process.env.NODE_ENV === 'production'){
   //Set static folder
   app.use(express.static('client/build'));
@@ -26,8 +25,16 @@ if(process.env.NODE_ENV === 'production'){
       res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
   });
 }
+*/
+
+const root = path.join(__dirname, 'client', 'build') 
+app.use(express.static(root)); 
+app.get("*", (req, res) => { 
+    res.sendFile('index.html', { root }); 
+})
 
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en: https://localhost:${PORT}`)
 });
+
