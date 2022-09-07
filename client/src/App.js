@@ -11,7 +11,7 @@ import store from './store';
 function App() {
   return (
     <Provider store = {store}>
-      <Router basename='/'>
+      <Router>
         <Fragment>
           <Navbar />
           <TablaRoutes/>
