@@ -17,6 +17,6 @@ npm run dev # levantar el entorno de desarrollo
 
 Visit the app:
 
-[Tabla Elecciones](https://tabla-elecciones.herokuapp.com/)
+[Tabla Elecciones](https://api-xml-elecciones.vercel.app/)
 
 Los archivos que se leen estan en la carpeta /files, se pueden reemplazar por archivos ubicados en /ARCHIVOS XML/XML/Avance##.
