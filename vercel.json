@@ -9,22 +9,12 @@
           "files/**"
         ]
       }
-    },
-    {
-      "src": "./client/build",   
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {        
       "src": "/(.*)",        
       "dest": "server.js"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "server.js"
     }
   ]
 }
