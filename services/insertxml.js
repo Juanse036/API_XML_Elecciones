@@ -31,7 +31,7 @@ async function getNacional(){
     nacional[i].Ciudad = 'NACIONAL';
     nacional[i].Boletin = boletin;
   }
-
+  
   return nacional;
 }
 

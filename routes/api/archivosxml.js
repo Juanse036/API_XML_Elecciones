@@ -13,7 +13,7 @@ router.get('/readnacional', async function(req, res, next) {
     }
 });
 
-router.get('/getnacional', async function(req, res, next) {
+router.get('/getnacional', async function(req, res, next) {  
   try {
     res.json(await insertxml.getNacional(req.query.page));
   } catch (err) {
