@@ -10,7 +10,7 @@ Se debe tener instalado **Node.js** a partir de la versión 14.17, en la termina
 
 ```
 npm install # instalar las dependencias
-npm run server # levantar el entorno de desarrollo
+npm run dev # levantar el entorno de desarrollo
 ```
 
 ## Link
