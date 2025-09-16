@@ -27,3 +27,5 @@ app.listen(PORT, () => {
   console.log(`Servidor corriendo en: https://localhost:${PORT}`)
 });
 
+module.exports = app;
+
