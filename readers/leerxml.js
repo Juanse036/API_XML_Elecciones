@@ -2,7 +2,6 @@ var parser = require('xml2json');
 fs = require('fs');
 const util = require("util");
 const readFile = util.promisify(fs.readFile);
-
 avance = [];
 //---------------------------------------PARTIDOS NACIONAL
 
